@@ -15,7 +15,7 @@ build:
     - detect-secrets-hook = detect_secrets.pre_commit_hook:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
