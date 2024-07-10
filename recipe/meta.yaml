@@ -1,5 +1,5 @@
 {% set name = "bc-detect-secrets" %}
-{% set version = "1.5.14" %}
+{% set version = "1.5.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bc-detect-secrets-{{ version }}.tar.gz
-  sha256: 133fb02ce8d66ec7f5d9dd122f3cee11e69497bf35d0b368f4556c0f8d8ab5f2
+  sha256: 0d7b2854e0c0672c95347bc4d310f5fbe245bd6154d8adf78a78204409432100
 
 build:
   entry_points:
@@ -15,7 +15,7 @@ build:
     - detect-secrets-hook = detect_secrets.pre_commit_hook:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
