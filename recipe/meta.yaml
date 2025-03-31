@@ -1,5 +1,5 @@
 {% set name = "bc-detect-secrets" %}
-{% set version = "1.5.38" %}
+{% set version = "1.5.39" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 26d8a34c09085958b5c27620a55145ae603254e309213d7a49b9c1fd683d2707
+  sha256: b9b25d0330725b48ee5cc614d8053152afb0eb8c25b3cdf923a6907e30325059
 
 build:
   entry_points:
